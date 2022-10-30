@@ -1,38 +1,208 @@
-.App {
-  text-align: center;
+
+.smallText {
+    font-size: 10px;
+    color: #f3f3f3;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.largeText {
+    /* for sidebar large nums */
+    font-size: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#Top {
+    background-image: linear-gradient(to right, #38b6ee, #4bdbf5);
+    height: 10vh;
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#Home {
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #ffffff;
+    height: 90vh;
+    width: 100%;
+    margin-top: 10vh;
 }
 
-.App-link {
-  color: #61dafb;
+#sideBar {
+    display: flex;
+    justify-content: center;
+
+    background-color: #f3f3f3;
+    height: 100%;
+    width: 30vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#searchBar {
+    display: flex;
+    flex-grow: 1;
+}
+
+.sideBarElement {
+    display: flex;
+    
+    height: 20vh;
+    width: 80%;
+
+
+}
+
+.sideBarElementTop {
+    display: flex;
+    
+    height: 60%;
+    
+    background-image: linear-gradient(to right, #7c52c5, #f265dc);
+}
+
+.sideBarElementTopLogo {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+    height: 20px;
+    width: 20px;
+
+    background-color: #ffffff;
+
+}
+
+.sideBarElementTopText {
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.sideBarElementBottom {
+    display: flex;
+
+    background-color: #ffffff;
+    height: 40%;
+}
+
+.sideBarElementBottomContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 90%;
+    width: 40%;
+}
+
+#Main {
+    display: flex;
+    height: 100%;
+    width: 70vw;
+}
+
+.Box {
+    height: 20%;
+    width: inherit;
+
+    flex-grow: 1;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0.5vh;
+}
+
+.line.smallFont {
+    
+    font-size: 10px;
+}
+
+.line.largeFont {
+
+    font-size: 20px;
+}
+
+.line.smallSize { 
+
+    height: 40%;
+}
+
+.line.largeSize {
+
+    height: 60%;
+}
+
+#Tiles {
+    display: flex;
+    
+    height: 60%;
+}
+
+.Tile {
+    display: flex;
+
+    height: 50px;
+    width: 50px;
+
+    border-radius: 2px;
+}
+
+.TileTop {
+    display: flex;
+    background-color: #f3f3f3;
+    height: 80%;
+}
+
+.TileBottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffffff;
+
+}
+
+.TileTopValue {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+
+    height: 20%;
+    width: 100%;
+}
+
+.TileTopCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 60%;
+}
+
+.TileTopLogo {
+    opacity: 100%;
+}
+
+.TileTopLogo.hidden {
+    opacity: 50%;
+}
+
+.TileTopButton {
+    display: flex;
+
+    height: 10px;
+    width: 20px;
+
+    border-radius: 10px;
+}
+
+.horizontalDivider {
+    height: 2px;
+    width: 80%;
+}
+
+.verticalDivider {
+    height: 80%;
+    width: 2px;
 }
